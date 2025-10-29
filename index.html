@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solomon Prabu D - Software Engineer</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font import and application */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.25rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 4px;
+            background-color: #3b82f6; /* blue-500 */
+            border-radius: 9999px;
+        }
+        .skill-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Style for the project and experience cards */
+        .card {
+            @apply bg-white p-6 rounded-xl shadow-lg transition duration-300 hover:shadow-xl border border-gray-100;
+        }
+        .nav-link {
+            transition: color 0.2s, background-color 0.2s;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-2xl font-extrabold text-gray-800 tracking-tight">Solomon Prabu D</a>
+                <nav class="hidden md:flex space-x-4">
+                    <a href="#summary" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Summary</a>
+                    <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Skills</a>
+                    <a href="#experience" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Projects</a>
+                    <a href="#education" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Education</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12 mb-16 p-8 bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl shadow-xl">
+            <!-- Profile Image Placeholder (Using a generic placeholder URL since the image is B&W/not provided) -->
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/180x180/3b82f6/ffffff?text=Profile" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/180x180/3b82f6/ffffff?text=SPD'"
+                     alt="Profile Picture" class="w-40 h-40 object-cover rounded-full ring-4 ring-white shadow-lg">
+            </div>
+            
+            <div>
+                <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">SOLOMON PRABU D</h1>
+                <p class="text-2xl text-blue-600 font-medium mt-1">SOFTWARE ENGINEER</p>
+                <div class="flex flex-wrap items-center space-x-4 mt-4 text-gray-600">
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>
+                        <a href="mailto:solomonprabu002@gmail.com" class="hover:text-blue-600">solomonprabu002@gmail.com</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="phone" class="w-5 h-5 text-blue-500"></i>
+                        <span>+46 728884312</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="linkedin" class="w-5 h-5 text-blue-500"></i>
+                        <a href="https://www.linkedin.com/in/SolomonPrabuD" target="_blank" class="hover:text-blue-600">Solomon Prabu D (LinkedIn)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Summary -->
+        <section id="summary" class="mb-16">
+            <h2 class="section-heading">Professional Summary</h2>
+            <div class="card">
+                <p class="text-gray-700 leading-relaxed">
+                    Software Engineer with almost **3 years of experience** delivering scalable applications using **Python**, **JavaScript**, and **cloud-native technologies** in Agile environments. Strong background in **ERP systems**, distributed deployment with **Docker/Kubernetes**, and **CI/CD automation**. Proven ability to adapt to new languages and technologies. Experienced in efficient code writing, reviews, debugging, and documentation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section id="skills" class="mb-16">
+            <h2 class="section-heading">Technical Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- Skill Card 1: Python -->
+                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                    <i data-lucide="code" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <p class="font-semibold text-gray-800">Python</p>
+                </div>
+                <!-- Skill Card 2: JavaScript -->
+                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                    <i data-lucide="code" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <p class="font-semibold text-gray-800">JavaScript</p>
+                </div>
+                <!-- Skill Card 3: DevOps -->
+                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                    <i data-lucide="cloud" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <p class="font-semibold text-gray-800">DevOps / CI/CD</p>
+                </div>
+                <!-- Skill Card 4: Docker/K8s -->
+                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                    <i data-lucide="container" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <p class="font-semibold text-gray-800">Docker / K8s</p>
+                </div>
+                <!-- Skill Card 5: Azure/GCP -->
+                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                    <i data-lucide="server" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <p class="font-semibold text-gray-800">Azure / GCP</p>
+                </div>
+                <!-- Skill Card 6: ERP/Odoo -->
+                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                    <i data-lucide="database" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <p class="font-semibold text-gray-800">Odoo ERP</p>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Other Proficiencies:</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">React.js</span>
+                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">Node.js</span>
+                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">PostgreSQL/MySQL</span>
+                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">Git</span>
+                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">Power Apps/Automate</span>
+                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">Selenium / Pytest</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience" class="mb-16">
+            <h2 class="section-heading">Work Experience</h2>
+            <div class="space-y-6">
+
+                <!-- Job 1 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900">System Engineer</h3>
+                    <p class="text-blue-600 font-medium">Zriya Solutions AB, Sweden | Sep 2023 - Present</p>
+                    <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700">
+                        <li>Developed and deployed cloud-native applications using **Docker**, **Kubernetes**, and **Azure**.</li>
+                        <li>Built and maintained **CI/CD pipelines** for reliable and efficient software delivery.</li>
+                        <li>Participated in Agile teams, contributing to planning, testing, and release activities.</li>
+                    </ul>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900">Technical Consultant</h3>
+                    <p class="text-blue-600 font-medium">OODU Implementers, India | Jun 2022 - Aug 2023</p>
+                    <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700">
+                        <li>Delivered tailored **ERP solutions** using **Odoo** for various business domains.</li>
+                        <li>Integrated third-party tools and ensured optimal workflows across departments.</li>
+                        <li>Supported stakeholders in requirement gathering and user training.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Projects -->
+        <section id="projects" class="mb-16">
+            <h2 class="section-heading">Key Projects & Achievements</h2>
+            <div class="space-y-8">
+                <!-- Project 1: Zeekrtech Europe -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900">Zeekrtech Europe Development (On-site)</h3>
+                    <p class="text-blue-600 font-medium mb-3">Gothenburg, Sweden | Sep 2023 - Jun 2025</p>
+                    <h4 class="font-semibold mt-4 text-gray-800">Python Development Highlights:</h4>
+                    <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
+                        <li>Increased planning efficiency and resource management by developing a **time-tracking feature** in the workshop management module, boosting productivity by **30%**.</li>
+                        <li>Enhanced inventory control by implementing automated part quantity tracking with real-time updates, **saving 20% time**.</li>
+                        <li>Delivered robust, scalable enterprise solutions by developing bespoke ERP modules for Inventory, Workshop, & Fleet Management in **Odoo**, deployed using **Docker & Kubernetes on Azure**, saving **6 hours weekly** on deployments.</li>
+                    </ul>
+                    <h4 class="font-semibold mt-4 text-gray-800">O365 Development Highlights:</h4>
+                    <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
+                        <li>Streamlined vehicle booking & approvals by developing **Power Apps** integrated with **Power Automate**, resulting in **80% reduction of manual work**.</li>
+                        <li>Achieved significant efficiency in vehicle registration, reducing manual processing time by **75%** via engineering an automated process.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2: StylCove Modular -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900">StylCove Modular ERP Customization (On-site)</h3>
+                    <p class="text-blue-600 font-medium mb-3">Coimbatore, India | Feb 2023 - Sep 2023</p>
+                    <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
+                        <li>Improved lead conversion rates by **40%** by building a custom CRM time-tracking feature.</li>
+                        <li>Automated documentation processes, **saving approximately 15 hours per week**, by designing and implementing customized report templates.</li>
+                        <li>Minimised approval delays by **20%** by designing and implementing robust approval workflows with integrated fallback logic.</li>
+                        <li>Successfully integrated **WhatsApp** and other third-party systems into the Odoo ERP.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="mb-16">
+            <h2 class="section-heading">Education</h2>
+            <div class="space-y-6">
+                <!-- Degree 1 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900">Master's in Computer Applications</h3>
+                    <p class="text-blue-600 font-medium">Bharathiar University, Coimbatore, India | Aug 2021 - Apr 2023</p>
+                    <p class="text-gray-600 mt-2">Relevant Coursework: Advanced Software Development, Mobile/Web Applications, ML & Big Data</p>
+                </div>
+                <!-- Degree 2 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900">Bachelor's in Computer Science</h3>
+                    <p class="text-blue-600 font-medium">The American College, Madurai, India | Jun 2018 - Apr 2021</p>
+                    <p class="text-gray-600 mt-2">Relevant Coursework: Systems Design, Database Management, Software Development</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Solomon Prabu D. Built with HTML and Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Smooth Scroll Logic for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Prevent default hash behavior
+                e.preventDefault();
+                
+                // Get the target element by its ID
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // Smoothly scroll to the element
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70, // Adjust for fixed header height
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
