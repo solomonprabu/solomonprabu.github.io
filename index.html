@@ -73,9 +73,9 @@
         <section class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12 mb-16 p-8 bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl shadow-xl">
             <!-- Profile Image Placeholder (Using a generic placeholder URL since the image is B&W/not provided) -->
             <div class="flex-shrink-0">
-                <img src="https://placehold.co/180x180/3b82f6/ffffff?text=Profile" 
+                <img src="/src/images/IMG_20250904_065155.jpg" 
                      onerror="this.onerror=null;this.src='https://placehold.co/180x180/3b82f6/ffffff?text=SPD'"
-                     alt="Profile Picture" class="w-40 h-40 object-cover rounded-full ring-4 ring-white shadow-lg">
+                     alt="Profile Picture" class="w-40 h-40 object-fit rounded-full ring-4 ring-white shadow-lg">
             </div>
             
             <div>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="flex items-center space-x-2">
                         <i data-lucide="linkedin" class="w-5 h-5 text-blue-500"></i>
-                        <a href="https://www.linkedin.com/in/SolomonPrabuD" target="_blank" class="hover:text-blue-600">Solomon Prabu D (LinkedIn)</a>
+                        <a href="https://www.linkedin.com/in/solomon-prabu" target="new" class="hover:text-blue-600">Solomon Prabu D (LinkedIn)</a>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
             <h2 class="section-heading">Professional Summary</h2>
             <div class="card">
                 <p class="text-gray-700 leading-relaxed">
-                    Software Engineer with almost **3 years of experience** delivering scalable applications using **Python**, **JavaScript**, and **cloud-native technologies** in Agile environments. Strong background in **ERP systems**, distributed deployment with **Docker/Kubernetes**, and **CI/CD automation**. Proven ability to adapt to new languages and technologies. Experienced in efficient code writing, reviews, debugging, and documentation.
+                    Software Engineer with almost <b>3 years of experience</b> delivering scalable applications using <b>Python</b>, <b>JavaScript</b>, and <b>cloud-native technologies</b> in Agile environments. Strong background in <b>ERP systems</b>, distributed deployment with <b>Docker/Kubernetes</b>, and <b>CI/CD automation</b>. Proven ability to adapt to new languages and technologies. Experienced in efficient code writing, reviews, debugging, and documentation.
                 </p>
             </div>
         </section>
@@ -119,12 +119,12 @@
                 </div>
                 <!-- Skill Card 2: JavaScript -->
                 <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
-                    <i data-lucide="code" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <i data-lucide="file-code" class="w-8 h-8 text-blue-600 mb-2"></i>
                     <p class="font-semibold text-gray-800">JavaScript</p>
                 </div>
                 <!-- Skill Card 3: DevOps -->
                 <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
-                    <i data-lucide="cloud" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <i data-lucide="workflow" class="w-8 h-8 text-blue-600 mb-2"></i>
                     <p class="font-semibold text-gray-800">DevOps / CI/CD</p>
                 </div>
                 <!-- Skill Card 4: Docker/K8s -->
@@ -134,7 +134,7 @@
                 </div>
                 <!-- Skill Card 5: Azure/GCP -->
                 <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
-                    <i data-lucide="server" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <i data-lucide="cloud" class="w-8 h-8 text-blue-600 mb-2"></i>
                     <p class="font-semibold text-gray-800">Azure / GCP</p>
                 </div>
                 <!-- Skill Card 6: ERP/Odoo -->
@@ -167,8 +167,8 @@
                     <h3 class="text-xl font-bold text-gray-900">System Engineer</h3>
                     <p class="text-blue-600 font-medium">Zriya Solutions AB, Sweden | Sep 2023 - Present</p>
                     <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700">
-                        <li>Developed and deployed cloud-native applications using **Docker**, **Kubernetes**, and **Azure**.</li>
-                        <li>Built and maintained **CI/CD pipelines** for reliable and efficient software delivery.</li>
+                        <li>Developed and deployed cloud-native applications using <b>Docker</b>, <b>Kubernetes</b>, and <b>Azure</b>.</li>
+                        <li>Built and maintained <b>CI/CD pipelines</b> for reliable and efficient software delivery.</li>
                         <li>Participated in Agile teams, contributing to planning, testing, and release activities.</li>
                     </ul>
                 </div>
@@ -178,7 +178,7 @@
                     <h3 class="text-xl font-bold text-gray-900">Technical Consultant</h3>
                     <p class="text-blue-600 font-medium">OODU Implementers, India | Jun 2022 - Aug 2023</p>
                     <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700">
-                        <li>Delivered tailored **ERP solutions** using **Odoo** for various business domains.</li>
+                        <li>Delivered tailored <b>ERP solutions</b> using <b>Odoo</b> for various business domains.</li>
                         <li>Integrated third-party tools and ensured optimal workflows across departments.</li>
                         <li>Supported stakeholders in requirement gathering and user training.</li>
                     </ul>
@@ -192,18 +192,25 @@
             <div class="space-y-8">
                 <!-- Project 1: Zeekrtech Europe -->
                 <div class="card">
-                    <h3 class="text-xl font-bold text-gray-900">Zeekrtech Europe Development (On-site)</h3>
+                    <div class="inline-grid grid-cols-2 grid-rows-1 gap-0">
+                        <div>
+                        <img class="w-5 h-5" src="/src/images/horizon_emblem_rgb_black.png" alt="ZeekrtechLogo">
+                        </div>
+                        <div>
+                        <h3 class="text-xl font-bold text-gray-900">Zeekrtech Europe (On-site)</h3>
+                        </div>
+                    </div>
                     <p class="text-blue-600 font-medium mb-3">Gothenburg, Sweden | Sep 2023 - Jun 2025</p>
                     <h4 class="font-semibold mt-4 text-gray-800">Python Development Highlights:</h4>
                     <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
-                        <li>Increased planning efficiency and resource management by developing a **time-tracking feature** in the workshop management module, boosting productivity by **30%**.</li>
-                        <li>Enhanced inventory control by implementing automated part quantity tracking with real-time updates, **saving 20% time**.</li>
-                        <li>Delivered robust, scalable enterprise solutions by developing bespoke ERP modules for Inventory, Workshop, & Fleet Management in **Odoo**, deployed using **Docker & Kubernetes on Azure**, saving **6 hours weekly** on deployments.</li>
+                        <li>Increased planning efficiency and resource management by developing a <b>time-tracking feature</b> in the workshop management module, boosting productivity by <b>30%</b>.</li>
+                        <li>Enhanced inventory control by implementing automated part quantity tracking with real-time updates, <b>saving 20% time</b>.</li>
+                        <li>Delivered robust, scalable enterprise solutions by developing bespoke ERP modules for Inventory, Workshop, & Fleet Management in <b>Odoo</b>, deployed using <b>Docker & Kubernetes on Azure</b>, saving <b>6 hours weekly</b> on deployments.</li>
                     </ul>
                     <h4 class="font-semibold mt-4 text-gray-800">O365 Development Highlights:</h4>
                     <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
-                        <li>Streamlined vehicle booking & approvals by developing **Power Apps** integrated with **Power Automate**, resulting in **80% reduction of manual work**.</li>
-                        <li>Achieved significant efficiency in vehicle registration, reducing manual processing time by **75%** via engineering an automated process.</li>
+                        <li>Streamlined vehicle booking & approvals by developing <b>Power Apps</b> integrated with <b>Power Automate</b>, resulting in <b>80% reduction of manual work</b>.</li>
+                        <li>Achieved significant efficiency in vehicle registration, reducing manual processing time by <b>75%</b> via engineering an automated process.</li>
                     </ul>
                 </div>
 
@@ -212,10 +219,10 @@
                     <h3 class="text-xl font-bold text-gray-900">StylCove Modular ERP Customization (On-site)</h3>
                     <p class="text-blue-600 font-medium mb-3">Coimbatore, India | Feb 2023 - Sep 2023</p>
                     <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
-                        <li>Improved lead conversion rates by **40%** by building a custom CRM time-tracking feature.</li>
-                        <li>Automated documentation processes, **saving approximately 15 hours per week**, by designing and implementing customized report templates.</li>
-                        <li>Minimised approval delays by **20%** by designing and implementing robust approval workflows with integrated fallback logic.</li>
-                        <li>Successfully integrated **WhatsApp** and other third-party systems into the Odoo ERP.</li>
+                        <li>Improved lead conversion rates by <b>40%</b> by building a custom CRM time-tracking feature.</li>
+                        <li>Automated documentation processes, <b>saving approximately 15 hours per week</b>, by designing and implementing customized report templates.</li>
+                        <li>Minimised approval delays by <b>20%</b> by designing and implementing robust approval workflows with integrated fallback logic.</li>
+                        <li>Successfully integrated <b>WhatsApp</b> and other third-party systems into the Odoo ERP.</li>
                     </ul>
                 </div>
             </div>
