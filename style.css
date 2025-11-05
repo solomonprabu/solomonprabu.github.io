@@ -1,0 +1,39 @@
+
+/* Custom font import and application */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fc;
+}
+.section-heading {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+}
+.section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #3b82f6; /* blue-500 */
+    border-radius: 9999px;
+}
+.skill-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+/* Style for the project and experience cards */
+.card {
+    @apply bg-white p-6 rounded-xl shadow-lg transition duration-300 hover:shadow-xl border border-gray-100;
+}
+.nav-link {
+    transition: color 0.2s, background-color 0.2s;
+}

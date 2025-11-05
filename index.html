@@ -5,56 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solomon Prabu D </title>
     <link rel="icon" type="image/x-icon" href="/src/images/icons/icons8-portfolio-48.png">
+    <link rel="stylesheet" href="style.css">
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Load Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        /* Custom font import and application */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f9fc;
-        }
-        .section-heading {
-            position: relative;
-            display: inline-block;
-            padding-bottom: 0.25rem;
-            margin-bottom: 1.5rem;
-            font-size: 1.875rem; /* text-3xl */
-            font-weight: 700; /* font-bold */
-        }
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50%;
-            height: 4px;
-            background-color: #3b82f6; /* blue-500 */
-            border-radius: 9999px;
-        }
-        .skill-card {
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        /* Style for the project and experience cards */
-        .card {
-            @apply bg-white p-6 rounded-xl shadow-lg transition duration-300 hover:shadow-xl border border-gray-100;
-        }
-        .nav-link {
-            transition: color 0.2s, background-color 0.2s;
-        }
-    </style>
 </head>
 <body>
 
     <!-- Header Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <a href="#" class="text-2xl font-extrabold text-gray-800 tracking-tight">Solomon Prabu D</a>
                 <nav class="hidden md:flex space-x-4">
@@ -69,7 +30,7 @@
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main class="max-w-6/8 sm:mx-10 lg:mx-25 md:mx-15 xl:mx-40 px-4 sm:px-6 lg:px-8 py-12">
         
         <!-- Hero Section -->
         <section class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12 mb-16 p-8 bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl shadow-xl">
@@ -83,23 +44,43 @@
             <div>
                 <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">SOLOMON PRABU D</h1>
                 <p class="text-2xl text-blue-600 font-medium mt-1">SOFTWARE ENGINEER</p>
-                <div class="flex flex-wrap items-center space-x-2 mt-4 text-gray-600">
-                    <div class="flex items-center space-x-2">
-                        <i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>
-                        <a href="mailto:solomonprabu002@gmail.com" class="hover:text-blue-600">solomonprabu002@gmail.com</a>
+
+                <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-2 mt-8">
+                    <!-- Card 1 -->
+                    <div class="w-auto mr-8">
+                        <h3 class="text-x font-semibold mb-1">E-mail</h3>
+                        <div class="flex items-center space-x-2"> 
+                            <i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>
+                            <a href="mailto:solomonprabu002@gmail.com" class="hover:text-blue-600">solomonprabu002@gmail.com</a>
+                        </div>
                     </div>
-                    <div class="flex items-center space-x-2">
-                        <i data-lucide="phone" class="w-5 h-5 text-blue-500"></i>
-                        <a href="tel:+46728884312">+46 728884312</a>
+
+                    <!-- Card 2 -->
+                    <div>
+                        <h3 class="text-x font-semibold mb-1">Phone</h3>
+                        <div class="flex items-center space-x-2"> 
+                            <i data-lucide="phone" class="w-5 h-5 text-blue-500"></i>
+                            <a href="tel:+46728884312" class="hover:text-blue-600">+46 728884312</a>
+                        </div>
                     </div>
-                    <div class="flex items-center space-x-2">
-                        <i data-lucide="linkedin" class="w-5 h-5 text-blue-500"></i>
-                        <a href="https://www.linkedin.com/in/solomon-prabu" target="new" class="hover:text-blue-600">Solomon Prabu D (LinkedIn)</a>
+
+                    <!-- Card 3 -->
+                    <div>
+                        <h3 class="text-x font-semibold mb-1">LinkedIn</h3>
+                        <div class="flex items-center space-x-2"> 
+                            <i data-lucide="linkedin" class="w-5 h-5 text-blue-500"></i>
+                            <a href="https://www.linkedin.com/in/solomon-prabu" target="new" class="hover:text-blue-600">Solomon Prabu D (LinkedIn)</a>
+                        </div>
                     </div>
-                    <div class="flex items-center space-x-2">
-                        <img src="/src/images/icons/icons8-leetcode-24 .png"/>
-                        <a href="https://leetcode.com/u/solomon_prabu/" target="new" class="hover:text-blue-600">Solomon Prabu D (Leetcode)</a>
-                    </div>
+
+                    <!-- Card 4 -->
+                    <div>
+                        <h3 class="text-x font-semibold mb-1">Leetcode</h3>
+                        <div class="flex items-center space-x-2"> 
+                            <img src="/src/images/icons/icons8-leetcode-24 .png"/>
+                            <a href="https://leetcode.com/u/solomon_prabu/" target="new" class="hover:text-blue-600">Solomon Prabu D (Leetcode)</a>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </section>
@@ -250,40 +231,40 @@
         </section>
 
         <!-- Feedback Carousel -->
-<section id="feedback" class="mb-16">
-    <h2 class="section-heading">Feedback & Recommendations</h2>
+        <section id="feedback" class="mb-16">
+            <h2 class="section-heading">Feedback & Recommendations</h2>
 
-    <div class="relative overflow-hidden rounded-2xl shadow-lg bg-white">
-        <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-            <!-- Slide 1 -->
-            <div class="min-w-full p-16">
-                <p class="text-gray-700 leading-relaxed text-lg italic">
-                    “I am writing to offer my highest recommendation for Solomon Prabu, who has been an invaluable member of our team at Zeekrtech EU. During his time working under my leadership as the Head of IT End User & Engineering Services at Zeekr Technology Europe, Solomon Prabu consistently demonstrated a level of skill, professionalism, and integrity well beyond his years.
-                    <br><br>
-                    From day one, he approached his responsibilities with a remarkable sense of dedication. Every project he committed to was completed on time and to an excellent standard. He quickly gained a deep understanding of our systems and processes, and showed a natural aptitude for learning new tools and technologies. His technical ability is complemented by a strong work ethic, an eagerness to grow, and an active learning mindset — all qualities that will undoubtedly make him a valuable asset to any team.
-                    <br><br>
-                    Beyond his technical skills, what truly sets him apart is his character. He is a kind, humble, and approachable individual who builds positive relationships with colleagues across all levels of the organization. He’s an excellent team player and has contributed to fostering a supportive and collaborative work environment. His friendly and respectful demeanor made him well-liked and trusted among his peers.
-                    <br><br>
-                    It has been a pleasure having him on the team, and while we are sad to see him go, I am confident that he will excel in his future endeavors. I wholeheartedly recommend him for any role he chooses to pursue and am certain he will bring immense value to his next organization.”
-                </p>
-                <p class="mt-6 text-right font-extrabold text-blue-600"> Håkan Molin </p>
-                <p class="text-right font-semibold text-blue-600"> Head of IT End User & Engineering Services<br/> Zeekr Technology Europe</p>
+            <div class="relative overflow-hidden rounded-2xl shadow-lg bg-white">
+                <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+                    <!-- Slide 1 -->
+                    <div class="min-w-full p-16">
+                        <p class="text-gray-700 leading-relaxed text-lg italic">
+                            “I am writing to offer my highest recommendation for Solomon Prabu, who has been an invaluable member of our team at Zeekrtech EU. During his time working under my leadership as the Head of IT End User & Engineering Services at Zeekr Technology Europe, Solomon Prabu consistently demonstrated a level of skill, professionalism, and integrity well beyond his years.
+                            <br><br>
+                            From day one, he approached his responsibilities with a remarkable sense of dedication. Every project he committed to was completed on time and to an excellent standard. He quickly gained a deep understanding of our systems and processes, and showed a natural aptitude for learning new tools and technologies. His technical ability is complemented by a strong work ethic, an eagerness to grow, and an active learning mindset — all qualities that will undoubtedly make him a valuable asset to any team.
+                            <br><br>
+                            Beyond his technical skills, what truly sets him apart is his character. He is a kind, humble, and approachable individual who builds positive relationships with colleagues across all levels of the organization. He’s an excellent team player and has contributed to fostering a supportive and collaborative work environment. His friendly and respectful demeanor made him well-liked and trusted among his peers.
+                            <br><br>
+                            It has been a pleasure having him on the team, and while we are sad to see him go, I am confident that he will excel in his future endeavors. I wholeheartedly recommend him for any role he chooses to pursue and am certain he will bring immense value to his next organization.”
+                        </p>
+                        <p class="mt-6 text-right font-extrabold text-blue-600"> Håkan Molin </p>
+                        <p class="text-right font-semibold text-blue-600"> Head of IT End User & Engineering Services<br/> Zeekr Technology Europe</p>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button id="prev" 
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white-400 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+
+                <button id="next" 
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white-400 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+
             </div>
-        </div>
-
-        <!-- Controls -->
-        <button id="prev" 
-            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white-400 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
-            <i data-lucide="chevron-left"></i>
-        </button>
-
-        <button id="next" 
-            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white-400 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
-            <i data-lucide="chevron-right"></i>
-        </button>
-
-    </div>
-</section>
+        </section>
 
 
     </main>
@@ -294,47 +275,8 @@
             <p>&copy; <script>document.write(new Date().getFullYear())</script> Solomon Prabu D. Built with HTML and Tailwind CSS.</p>
         </div>
     </footer>
-
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-
-        // Smooth Scroll Logic for Navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                // Prevent default hash behavior
-                e.preventDefault();
-                
-                // Get the target element by its ID
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    // Smoothly scroll to the element
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70, // Adjust for fixed header height
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Simple Carousel Logic
-        const carousel = document.getElementById('carousel');
-        const slides = carousel.children;
-        let index = 0;
-
-        document.getElementById('next').addEventListener('click', () => {
-            index = (index + 1) % slides.length;
-            carousel.style.transform = `translateX(-${index * 100}%)`;
-        });
-
-        document.getElementById('prev').addEventListener('click', () => {
-            index = (index - 1 + slides.length) % slides.length;
-            carousel.style.transform = `translateX(-${index * 100}%)`;
-        });
-
-    </script>
+<script src="/javascript/lucide.js"></script>
+<script src="/javascript/script.js"></script>
 
 </body>
 </html>
