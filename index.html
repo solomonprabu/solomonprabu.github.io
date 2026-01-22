@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Load Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <!-- Header Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6/8 sm:mx-10 lg:mx-25 md:mx-15 xl:mx-40 px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <a href="#" class="text-2xl font-extrabold text-gray-800 tracking-tight">Solomon Prabu D</a>
                 <nav class="hidden md:flex space-x-4">
@@ -50,7 +50,7 @@
                     <div class="w-auto mr-8">
                         <h3 class="text-x font-semibold mb-1">E-mail</h3>
                         <div class="flex items-center space-x-2"> 
-                            <i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>
+                            <i class="fa-solid fa-envelope w-5 h-5 text-blue-500"></i>
                             <a href="mailto:solomonprabu002@gmail.com" class="hover:text-blue-600">solomonprabu002@gmail.com</a>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                     <div>
                         <h3 class="text-x font-semibold mb-1">Phone</h3>
                         <div class="flex items-center space-x-2"> 
-                            <i data-lucide="phone" class="w-5 h-5 text-blue-500"></i>
+                            <i class="fa-solid fa-phone w-5 h-5 text-blue-500"></i>
                             <a href="tel:+46728884312" class="hover:text-blue-600">+46 728884312</a>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                     <div>
                         <h3 class="text-x font-semibold mb-1">LinkedIn</h3>
                         <div class="flex items-center space-x-2"> 
-                            <i data-lucide="linkedin" class="w-5 h-5 text-blue-500"></i>
+                            <i class="fa-brands fa-linkedin w-5 h-5 text-blue-500"></i>
                             <a href="https://www.linkedin.com/in/solomon-prabu" target="new" class="hover:text-blue-600">Solomon Prabu D (LinkedIn)</a>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                     <div>
                         <h3 class="text-x font-semibold mb-1">Leetcode</h3>
                         <div class="flex items-center space-x-2"> 
-                            <img src="/src/images/icons/icons8-leetcode-24 .png"/>
+                            <img src="/src/images/icons/icons8-leetcode-24.png"/>
                             <a href="https://leetcode.com/u/solomon_prabu/" target="new" class="hover:text-blue-600">Solomon Prabu D (Leetcode)</a>
                         </div>
                     </div>  
@@ -101,32 +101,37 @@
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
                 <!-- Skill Card 1: Python -->
                 <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
-                    <i data-lucide="code" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <i class="fa-brands fa-python w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
                     <p class="font-semibold text-gray-800">Python</p>
                 </div>
-                <!-- Skill Card 2: JavaScript -->
+                <!-- Skill Card 2: Java -->
                 <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
-                    <i data-lucide="file-code" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <i class="fa-brands fa-java w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
+                    <p class="font-semibold text-gray-800">Java</p>
+                </div>
+                <!-- Skill Card 3: JavaScript -->
+                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                    <i class="fa-brands fa-js w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
                     <p class="font-semibold text-gray-800">JavaScript</p>
                 </div>
-                <!-- Skill Card 3: DevOps -->
+                <!-- Skill Card 4: DevOps -->
                 <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
-                    <i data-lucide="workflow" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <i class="fa-solid fa-diagram-project w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
                     <p class="font-semibold text-gray-800">DevOps / CI/CD</p>
                 </div>
-                <!-- Skill Card 4: Docker/K8s -->
+                <!-- Skill Card 5: Docker/K8s -->
                 <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
-                    <i data-lucide="container" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <i class="fa-brands fa-docker w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
                     <p class="font-semibold text-gray-800">Docker / K8s</p>
                 </div>
-                <!-- Skill Card 5: Azure/GCP -->
+                <!-- Skill Card 6: Azure/GCP -->
                 <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
-                    <i data-lucide="cloud" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <i class="fa-solid fa-cloud w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
                     <p class="font-semibold text-gray-800">Azure / GCP</p>
                 </div>
-                <!-- Skill Card 6: ERP/Odoo -->
+                <!-- Skill Card 7: ERP/Odoo -->
                 <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
-                    <i data-lucide="database" class="w-8 h-8 text-blue-600 mb-2"></i>
+                    <i class="fa-solid fa-database w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
                     <p class="font-semibold text-gray-800">Odoo ERP</p>
                 </div>
             </div>
@@ -178,11 +183,11 @@
             <h2 class="section-heading">Key Projects & Achievements</h2>
             <div class="space-y-8">
                 <!-- Project 1: Zeekrtech Europe -->
-                <div class="card ">
+                <div class="card">
                     <div class="flex items-center space-x-3">
-        <img class="w-6 h-6" src="/src/images/horizon_emblem_rgb_black.png" alt="ZeekrtechLogo">
-        <h3 class="text-xl font-bold text-gray-900">Zeekrtech Europe (On-site)</h3>
-    </div>
+                        <img class="w-6 h-6" src="/src/images/horizon_emblem_rgb_black.png" alt="ZeekrtechLogo">
+                        <h3 class="text-xl font-bold text-gray-900">Zeekrtech Europe (On-site)</h3>
+                    </div>
                     <p class="text-blue-600 font-medium mb-3">Gothenburg, Sweden | Sep 2023 - Jun 2025</p>
                     <h4 class="font-semibold mt-4 text-gray-800">Python Development Highlights:</h4>
                     <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
@@ -247,7 +252,7 @@
                             <br><br>
                             It has been a pleasure having him on the team, and while we are sad to see him go, I am confident that he will excel in his future endeavors. I wholeheartedly recommend him for any role he chooses to pursue and am certain he will bring immense value to his next organization.”
                         </p>
-                        <p class="mt-6 text-right font-extrabold text-blue-600"> Håkan Molin </p>
+                        <a href="https://www.linkedin.com/in/h%C3%A5kan-molin-021a87b/" target="new" class="mt-6 text-right font-extrabold text-blue-600 block"> Håkan Molin </a>
                         <p class="text-right font-semibold text-blue-600"> Head of IT End User & Engineering Services<br/> Zeekr Technology Europe</p>
                     </div>
                 </div>
@@ -255,12 +260,12 @@
                 <!-- Controls -->
                 <button id="prev" 
                     class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white-400 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
-                    <i data-lucide="chevron-left"></i>
+                    <i class="fa-solid fa-chevron-left"></i>
                 </button>
 
                 <button id="next" 
                     class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white-400 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
-                    <i data-lucide="chevron-right"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </button>
 
             </div>
