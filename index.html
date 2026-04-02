@@ -1,86 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solomon Prabu D </title>
-    <link rel="icon" type="image/x-icon" href="/src/images/icons/icons8-portfolio-48.png">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solomon Prabu D</title>
+    <link rel="icon" type="image/x-icon" href="/src/images/icons/icons8-portfolio-48.png" />
+    <link rel="stylesheet" href="style.css" />
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
+    <script>
+    tailwind.config = {
+        darkMode: 'class',
+    }
+    </script>
 
+    <!-- Load Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="bg-[#f7f9fc] dark:bg-slate-900 transition-colors duration-300 text-gray-900 dark:text-white dark:text-white">
     <!-- Header Navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="bg-white dark:bg-slate-800 dark:bg-slate-800 shadow-md sticky top-0 z-50">
         <div class="max-w-6/8 sm:mx-10 lg:mx-25 md:mx-15 xl:mx-40 px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="#" class="text-2xl font-extrabold text-gray-800 tracking-tight">Solomon Prabu D</a>
-                <nav class="hidden md:flex space-x-4">
-                    <a href="#summary" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Summary</a>
-                    <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Skills</a>
-                    <a href="#experience" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Experience</a>
-                    <a href="#projects" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Projects</a>
-                    <a href="#education" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Education</a>
-                    <a href="#feedback" class="nav-link text-gray-600 hover:text-blue-600 p-2 rounded-lg">Feedback</a>
+                <a href="#" class="text-2xl font-extrabold text-gray-800 dark:text-gray-200 dark:text-white tracking-tight">Solomon Prabu D</a>
+                <nav class="hidden md:flex space-x-4 items-center">
+                    <a href="#summary" class="nav-link text-gray-600 dark:text-gray-400 dark:text-gray-300 hover:text-blue-600 p-2 rounded-lg">Summary</a>
+                    <a href="#skills" class="nav-link text-gray-600 dark:text-gray-400 dark:text-gray-300 hover:text-blue-600 p-2 rounded-lg">Skills</a>
+                    <a href="#experience" class="nav-link text-gray-600 dark:text-gray-400 dark:text-gray-300 hover:text-blue-600 p-2 rounded-lg">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-600 dark:text-gray-400 dark:text-gray-300 hover:text-blue-600 p-2 rounded-lg">Projects</a>
+                    <a href="#education" class="nav-link text-gray-600 dark:text-gray-400 dark:text-gray-300 hover:text-blue-600 p-2 rounded-lg">Education</a>
+                    <a href="#feedback" class="nav-link text-gray-600 dark:text-gray-400 dark:text-gray-300 hover:text-blue-600 p-2 rounded-lg">Feedback</a>
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode" type="button" class="p-2 ml-4 relative bg-gray-200 dark:bg-slate-700 rounded-lg hover:bg-gray-300 dark:hover:bg-slate-600 transition-colors w-10 h-10 flex items-center justify-center overflow-hidden">
+                        <i id="theme-toggle-dark-icon" class="fa-solid fa-moon text-gray-800 dark:text-gray-200 absolute transition-all duration-500 transform"></i>
+                        <i id="theme-toggle-light-icon" class="fa-solid fa-sun text-yellow-500 absolute transition-all duration-500 transform"></i>
+
+                    </button>
                 </nav>
             </div>
         </div>
     </header>
 
     <main class="max-w-6/8 sm:mx-10 lg:mx-25 md:mx-15 xl:mx-40 px-4 sm:px-6 lg:px-8 py-12">
-        
         <!-- Hero Section -->
-        <section class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12 mb-16 p-8 bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl shadow-xl">
+        <section
+            class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12 mb-16 p-8 bg-gradient-to-r from-blue-50 to-indigo-100 dark:from-slate-800 dark:to-slate-800 rounded-2xl shadow-xl">
             <!-- Profile Image Placeholder (Using a generic placeholder URL since the image is B&W/not provided) -->
             <div class="flex-shrink-0">
-                <img src="/src/images/IMG_20250904_065155.jpg" 
-                     onerror="this.onerror=null;this.src='https://placehold.co/180x180/3b82f6/ffffff?text=SPD'"
-                     alt="Profile Picture" class="w-40 h-40 object-fit rounded-full ring-4 ring-white shadow-lg">
+                <img src="src/images/IMG_20250904_065155.jpg" onerror="
+              this.onerror = null;
+              this.src = 'https://placehold.co/180x180/3b82f6/ffffff?text=SPD';
+            " alt="Profile Picture" class="w-40 h-40 object-fit rounded-full ring-4 ring-white dark:ring-slate-700 shadow-lg" />
             </div>
-            
+
             <div>
-                <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">SOLOMON PRABU D</h1>
-                <p class="text-2xl text-blue-600 font-medium mt-1">SOFTWARE ENGINEER</p>
+                <h1 class="text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                    SOLOMON PRABU D
+                </h1>
+                <p class="text-2xl text-blue-600 font-medium mt-1">
+                    SOFTWARE ENGINEER
+                </p>
 
                 <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-2 mt-8">
                     <!-- Card 1 -->
                     <div class="w-auto mr-8">
                         <h3 class="text-x font-semibold mb-1">E-mail</h3>
-                        <div class="flex items-center space-x-2"> 
+                        <div class="flex items-center space-x-2">
                             <i class="fa-solid fa-envelope w-5 h-5 text-blue-500"></i>
-                            <a href="mailto:solomonprabu002@gmail.com" class="hover:text-blue-600">solomonprabu002@gmail.com</a>
+                            <a href="mailto:solomonprabu002@gmail.com"
+                                class="hover:text-blue-600">solomonprabu002@gmail.com</a>
                         </div>
                     </div>
 
                     <!-- Card 2 -->
                     <div>
                         <h3 class="text-x font-semibold mb-1">Phone</h3>
-                        <div class="flex items-center space-x-2"> 
+                        <div class="flex items-center space-x-2">
                             <i class="fa-solid fa-phone w-5 h-5 text-blue-500"></i>
-                            <a href="tel:+46728884312" class="hover:text-blue-600">+46 728884312</a>
+                            <a href="tel:+917845990365" class="hover:text-blue-600">+91 7845990365</a>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
                     <div>
                         <h3 class="text-x font-semibold mb-1">LinkedIn</h3>
-                        <div class="flex items-center space-x-2"> 
+                        <div class="flex items-center space-x-2">
                             <i class="fa-brands fa-linkedin w-5 h-5 text-blue-500"></i>
-                            <a href="https://www.linkedin.com/in/solomon-prabu" target="new" class="hover:text-blue-600">Solomon Prabu D (LinkedIn)</a>
+                            <a href="https://www.linkedin.com/in/solomon-prabu" target="new"
+                                class="hover:text-blue-600">Solomon Prabu D (LinkedIn)</a>
                         </div>
                     </div>
 
                     <!-- Card 4 -->
                     <div>
                         <h3 class="text-x font-semibold mb-1">Leetcode</h3>
-                        <div class="flex items-center space-x-2"> 
-                            <img src="/src/images/icons/icons8-leetcode-24.png"/>
-                            <a href="https://leetcode.com/u/solomon_prabu/" target="new" class="hover:text-blue-600">Solomon Prabu D (Leetcode)</a>
+                        <div class="flex items-center space-x-2">
+                            <img src="src/images/icons/icons8-leetcode-24.png" />
+                            <a href="https://leetcode.com/u/solomon_prabu/" target="new"
+                                class="hover:text-blue-600">Solomon Prabu D (Leetcode)</a>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </section>
@@ -89,8 +108,15 @@
         <section id="summary" class="mb-16">
             <h2 class="section-heading">Professional Summary</h2>
             <div class="card">
-                <p class="text-gray-700 leading-relaxed">
-                    Software Engineer with almost <b>3 years of experience</b> delivering scalable applications using <b>Python</b>, <b>JavaScript</b>, and <b>cloud-native technologies</b> in Agile environments. Strong background in <b>ERP systems</b>, distributed deployment with <b>Docker/Kubernetes</b>, and <b>CI/CD automation</b>. Proven ability to adapt to new languages and technologies. Experienced in efficient code writing, reviews, debugging, and documentation.
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    Software Engineer with almost
+                    <b>3 years of experience</b> delivering scalable applications using
+                    <b>Python</b>, <b>JavaScript</b>, and
+                    <b>cloud-native technologies</b> in Agile environments. Strong
+                    background in <b>ERP systems</b>, distributed deployment with
+                    <b>Docker/Kubernetes</b>, and <b>CI/CD automation</b>. Proven
+                    ability to adapt to new languages and technologies. Experienced in
+                    efficient code writing, reviews, debugging, and documentation.
                 </p>
             </div>
         </section>
@@ -100,51 +126,63 @@
             <h2 class="section-heading">Technical Skills</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
                 <!-- Skill Card 1: Python -->
-                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                <div
+                    class="skill-card flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-md border-b-4 border-blue-500">
                     <i class="fa-brands fa-python w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
-                    <p class="font-semibold text-gray-800">Python</p>
+                    <p class="font-semibold text-gray-800 dark:text-gray-200">Python</p>
                 </div>
                 <!-- Skill Card 2: Java -->
-                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                <div
+                    class="skill-card flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-md border-b-4 border-blue-500">
                     <i class="fa-brands fa-java w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
-                    <p class="font-semibold text-gray-800">Java</p>
+                    <p class="font-semibold text-gray-800 dark:text-gray-200">Java</p>
                 </div>
                 <!-- Skill Card 3: JavaScript -->
-                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                <div
+                    class="skill-card flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-md border-b-4 border-blue-500">
                     <i class="fa-brands fa-js w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
-                    <p class="font-semibold text-gray-800">JavaScript</p>
+                    <p class="font-semibold text-gray-800 dark:text-gray-200">JavaScript</p>
                 </div>
                 <!-- Skill Card 4: DevOps -->
-                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                <div
+                    class="skill-card flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-md border-b-4 border-blue-500">
                     <i class="fa-solid fa-diagram-project w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
-                    <p class="font-semibold text-gray-800">DevOps / CI/CD</p>
+                    <p class="font-semibold text-gray-800 dark:text-gray-200">DevOps / CI/CD</p>
                 </div>
                 <!-- Skill Card 5: Docker/K8s -->
-                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                <div
+                    class="skill-card flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-md border-b-4 border-blue-500">
                     <i class="fa-brands fa-docker w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
-                    <p class="font-semibold text-gray-800">Docker / K8s</p>
+                    <p class="font-semibold text-gray-800 dark:text-gray-200">Docker / K8s</p>
                 </div>
                 <!-- Skill Card 6: Azure/GCP -->
-                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                <div
+                    class="skill-card flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-md border-b-4 border-blue-500">
                     <i class="fa-solid fa-cloud w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
-                    <p class="font-semibold text-gray-800">Azure / GCP</p>
+                    <p class="font-semibold text-gray-800 dark:text-gray-200">Azure / GCP</p>
                 </div>
                 <!-- Skill Card 7: ERP/Odoo -->
-                <div class="skill-card flex flex-col items-center p-4 bg-white rounded-xl shadow-md border-b-4 border-blue-500">
+                <div
+                    class="skill-card flex flex-col items-center p-4 bg-white dark:bg-slate-800 rounded-xl shadow-md border-b-4 border-blue-500">
                     <i class="fa-solid fa-database w-8 h-8 text-blue-600 mb-2 text-3xl"></i>
-                    <p class="font-semibold text-gray-800">Odoo ERP</p>
+                    <p class="font-semibold text-gray-800 dark:text-gray-200">Odoo ERP</p>
                 </div>
             </div>
 
             <div class="mt-8">
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Other Proficiencies:</h3>
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
+                    Other Proficiencies:
+                </h3>
                 <div class="flex flex-wrap gap-3">
-                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">React.js</span>
-                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">Node.js</span>
-                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">PostgreSQL/MySQL</span>
-                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">Git</span>
-                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">Power Apps/Automate</span>
-                    <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-full">Selenium / Pytest</span>
+                    <span class="bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-sm font-medium px-3 py-1.5 rounded-full">React.js</span>
+                    <span class="bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-sm font-medium px-3 py-1.5 rounded-full">Node.js</span>
+                    <span
+                        class="bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-sm font-medium px-3 py-1.5 rounded-full">PostgreSQL/MySQL</span>
+                    <span class="bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-sm font-medium px-3 py-1.5 rounded-full">Git</span>
+                    <span class="bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-sm font-medium px-3 py-1.5 rounded-full">Power
+                        Apps/Automate</span>
+                    <span class="bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-300 text-sm font-medium px-3 py-1.5 rounded-full">Selenium /
+                        Pytest</span>
                 </div>
             </div>
         </section>
@@ -153,26 +191,68 @@
         <section id="experience" class="mb-16">
             <h2 class="section-heading">Work Experience</h2>
             <div class="space-y-6">
-
                 <!-- Job 1 -->
                 <div class="card">
-                    <h3 class="text-xl font-bold text-gray-900">System Engineer</h3>
-                    <p class="text-blue-600 font-medium">Zriya Solutions AB, Sweden | Sep 2023 - October 2025</p>
-                    <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700">
-                        <li>Developed and deployed cloud-native applications using <b>Docker</b>, <b>Kubernetes</b>, and <b>Azure</b>.</li>
-                        <li>Built and maintained <b>CI/CD pipelines</b> for reliable and efficient software delivery.</li>
-                        <li>Participated in Agile teams, contributing to planning, testing, and release activities.</li>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Odoo Developer</h3>
+                    <p class="text-blue-600 font-medium">
+                        Calin Global Services, India | March 2026 - Present
+                    </p>
+                    <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>
+                            Odoo Migrations
+                        </li>
+                        <li>
+                            Custom Module Development
+                        </li>
+                        <li>
+                            <b>Odoo Community Association(OCA)</b> Module Development/Migrations
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Job 2 -->
                 <div class="card">
-                    <h3 class="text-xl font-bold text-gray-900">Technical Consultant</h3>
-                    <p class="text-blue-600 font-medium">OODU Implementers, India | Jun 2022 - Aug 2023</p>
-                    <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700">
-                        <li>Delivered tailored <b>ERP solutions</b> using <b>Odoo</b> for various business domains.</li>
-                        <li>Integrated third-party tools and ensured optimal workflows across departments.</li>
-                        <li>Supported stakeholders in requirement gathering and user training.</li>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">System Engineer</h3>
+                    <p class="text-blue-600 font-medium">
+                        Zriya Solutions AB, Sweden | Sep 2023 - October 2025
+                    </p>
+                    <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>
+                            Developed and deployed cloud-native applications using
+                            <b>Docker</b>, <b>Kubernetes</b>, and <b>Azure</b>.
+                        </li>
+                        <li>
+                            Built and maintained <b>CI/CD pipelines</b> for reliable and
+                            efficient software delivery.
+                        </li>
+                        <li>
+                            Participated in Agile teams, contributing to planning, testing,
+                            and release activities.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                        Technical Consultant
+                    </h3>
+                    <p class="text-blue-600 font-medium">
+                        OODU Implementers, India | Jun 2022 - Aug 2023
+                    </p>
+                    <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>
+                            Delivered tailored <b>ERP solutions</b> using <b>Odoo</b> for
+                            various business domains.
+                        </li>
+                        <li>
+                            Integrated third-party tools and ensured optimal workflows
+                            across departments.
+                        </li>
+                        <li>
+                            Supported stakeholders in requirement gathering and user
+                            training.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -185,32 +265,80 @@
                 <!-- Project 1: Zeekrtech Europe -->
                 <div class="card">
                     <div class="flex items-center space-x-3">
-                        <img class="w-6 h-6" src="/src/images/horizon_emblem_rgb_black.png" alt="ZeekrtechLogo">
-                        <h3 class="text-xl font-bold text-gray-900">Zeekrtech Europe (On-site)</h3>
+                        <img class="w-6 h-6" src="src/images/horizon_emblem_rgb_black.png" alt="ZeekrtechLogo" />
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                            Zeekrtech Europe (On-site)
+                        </h3>
                     </div>
-                    <p class="text-blue-600 font-medium mb-3">Gothenburg, Sweden | Sep 2023 - Jun 2025</p>
-                    <h4 class="font-semibold mt-4 text-gray-800">Python Development Highlights:</h4>
-                    <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
-                        <li>Increased planning efficiency and resource management by developing a <b>time-tracking feature</b> in the workshop management module, boosting productivity by <b>30%</b>.</li>
-                        <li>Enhanced inventory control by implementing automated part quantity tracking with real-time updates, <b>saving 20% time</b>.</li>
-                        <li>Delivered robust, scalable enterprise solutions by developing bespoke ERP modules for Inventory, Workshop, & Fleet Management in <b>Odoo</b>, deployed using <b>Docker & Kubernetes on Azure</b>, saving <b>6 hours weekly</b> on deployments.</li>
+                    <p class="text-blue-600 font-medium mb-3">
+                        Gothenburg, Sweden | Sep 2023 - Jun 2025
+                    </p>
+                    <h4 class="font-semibold mt-4 text-gray-800 dark:text-gray-200">
+                        Python Development Highlights:
+                    </h4>
+                    <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>
+                            Increased planning efficiency and resource management by
+                            developing a <b>time-tracking feature</b> in the workshop
+                            management module, boosting productivity by <b>30%</b>.
+                        </li>
+                        <li>
+                            Enhanced inventory control by implementing automated part
+                            quantity tracking with real-time updates,
+                            <b>saving 20% time</b>.
+                        </li>
+                        <li>
+                            Delivered robust, scalable enterprise solutions by developing
+                            bespoke ERP modules for Inventory, Workshop, & Fleet Management
+                            in <b>Odoo</b>, deployed using
+                            <b>Docker & Kubernetes on Azure</b>, saving
+                            <b>6 hours weekly</b> on deployments.
+                        </li>
                     </ul>
-                    <h4 class="font-semibold mt-4 text-gray-800">O365 Development Highlights:</h4>
-                    <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
-                        <li>Streamlined vehicle booking & approvals by developing <b>Power Apps</b> integrated with <b>Power Automate</b>, resulting in <b>80% reduction of manual work</b>.</li>
-                        <li>Achieved significant efficiency in vehicle registration, reducing manual processing time by <b>75%</b> via engineering an automated process.</li>
+                    <h4 class="font-semibold mt-4 text-gray-800 dark:text-gray-200">
+                        O365 Development Highlights:
+                    </h4>
+                    <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>
+                            Streamlined vehicle booking & approvals by developing
+                            <b>Power Apps</b> integrated with <b>Power Automate</b>,
+                            resulting in <b>80% reduction of manual work</b>.
+                        </li>
+                        <li>
+                            Achieved significant efficiency in vehicle registration,
+                            reducing manual processing time by <b>75%</b> via engineering an
+                            automated process.
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Project 2: StylCove Modular -->
                 <div class="card">
-                    <h3 class="text-xl font-bold text-gray-900">StylCove Modular ERP Customization (On-site)</h3>
-                    <p class="text-blue-600 font-medium mb-3">Coimbatore, India | Feb 2023 - Sep 2023</p>
-                    <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700">
-                        <li>Improved lead conversion rates by <b>40%</b> by building a custom CRM time-tracking feature.</li>
-                        <li>Automated documentation processes, <b>saving approximately 15 hours per week</b>, by designing and implementing customized report templates.</li>
-                        <li>Minimised approval delays by <b>20%</b> by designing and implementing robust approval workflows with integrated fallback logic.</li>
-                        <li>Successfully integrated <b>WhatsApp</b> and other third-party systems into the Odoo ERP.</li>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                        StylCove Modular ERP Customization (On-site)
+                    </h3>
+                    <p class="text-blue-600 font-medium mb-3">
+                        Coimbatore, India | Feb 2023 - Sep 2023
+                    </p>
+                    <ul class="list-disc ml-5 mt-2 space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>
+                            Improved lead conversion rates by <b>40%</b> by building a
+                            custom CRM time-tracking feature.
+                        </li>
+                        <li>
+                            Automated documentation processes,
+                            <b>saving approximately 15 hours per week</b>, by designing and
+                            implementing customized report templates.
+                        </li>
+                        <li>
+                            Minimised approval delays by <b>20%</b> by designing and
+                            implementing robust approval workflows with integrated fallback
+                            logic.
+                        </li>
+                        <li>
+                            Successfully integrated <b>WhatsApp</b> and other third-party
+                            systems into the Odoo ERP.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -222,15 +350,29 @@
             <div class="space-y-6">
                 <!-- Degree 1 -->
                 <div class="card">
-                    <h3 class="text-xl font-bold text-gray-900">Master's in Computer Applications</h3>
-                    <p class="text-blue-600 font-medium">Bharathiar University, Coimbatore, India | Aug 2021 - Apr 2023</p>
-                    <p class="text-gray-600 mt-2">Relevant Coursework: Advanced Software Development, Mobile/Web Applications, ML & Big Data</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                        Master's in Computer Applications
+                    </h3>
+                    <p class="text-blue-600 font-medium">
+                        Bharathiar University, Coimbatore, India | Aug 2021 - Apr 2023
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">
+                        Relevant Coursework: Advanced Software Development, Mobile/Web
+                        Applications, ML & Big Data
+                    </p>
                 </div>
                 <!-- Degree 2 -->
                 <div class="card">
-                    <h3 class="text-xl font-bold text-gray-900">Bachelor's in Computer Science</h3>
-                    <p class="text-blue-600 font-medium">The American College, Madurai, India | Jun 2018 - Apr 2021</p>
-                    <p class="text-gray-600 mt-2">Relevant Coursework: Systems Design, Database Management, Software Development</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                        Bachelor's in Computer Science
+                    </h3>
+                    <p class="text-blue-600 font-medium">
+                        The American College, Madurai, India | Jun 2018 - Apr 2021
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">
+                        Relevant Coursework: Systems Design, Database Management, Software
+                        Development
+                    </p>
                 </div>
             </div>
         </section>
@@ -239,49 +381,133 @@
         <section id="feedback" class="mb-16">
             <h2 class="section-heading">Feedback & Recommendations</h2>
 
-            <div class="relative overflow-hidden rounded-2xl shadow-lg bg-white">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg bg-white dark:bg-slate-800">
                 <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
                     <!-- Slide 1 -->
                     <div class="min-w-full p-16">
-                        <p class="text-gray-700 leading-relaxed text-lg italic">
-                            “I am writing to offer my highest recommendation for Solomon Prabu, who has been an invaluable member of our team at Zeekrtech EU. During his time working under my leadership as the Head of IT End User & Engineering Services at Zeekr Technology Europe, Solomon Prabu consistently demonstrated a level of skill, professionalism, and integrity well beyond his years.
-                            <br><br>
-                            From day one, he approached his responsibilities with a remarkable sense of dedication. Every project he committed to was completed on time and to an excellent standard. He quickly gained a deep understanding of our systems and processes, and showed a natural aptitude for learning new tools and technologies. His technical ability is complemented by a strong work ethic, an eagerness to grow, and an active learning mindset — all qualities that will undoubtedly make him a valuable asset to any team.
-                            <br><br>
-                            Beyond his technical skills, what truly sets him apart is his character. He is a kind, humble, and approachable individual who builds positive relationships with colleagues across all levels of the organization. He’s an excellent team player and has contributed to fostering a supportive and collaborative work environment. His friendly and respectful demeanor made him well-liked and trusted among his peers.
-                            <br><br>
-                            It has been a pleasure having him on the team, and while we are sad to see him go, I am confident that he will excel in his future endeavors. I wholeheartedly recommend him for any role he chooses to pursue and am certain he will bring immense value to his next organization.”
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg italic">
+                            “I am writing to offer my highest recommendation for Solomon
+                            Prabu, who has been an invaluable member of our team at
+                            Zeekrtech EU. During his time working under my leadership as the
+                            Head of IT End User & Engineering Services at Zeekr Technology
+                            Europe, Solomon Prabu consistently demonstrated a level of
+                            skill, professionalism, and integrity well beyond his years.
+                            <br /><br />
+                            From day one, he approached his responsibilities with a
+                            remarkable sense of dedication. Every project he committed to
+                            was completed on time and to an excellent standard. He quickly
+                            gained a deep understanding of our systems and processes, and
+                            showed a natural aptitude for learning new tools and
+                            technologies. His technical ability is complemented by a strong
+                            work ethic, an eagerness to grow, and an active learning mindset
+                            — all qualities that will undoubtedly make him a valuable asset
+                            to any team.
+                            <br /><br />
+                            Beyond his technical skills, what truly sets him apart is his
+                            character. He is a kind, humble, and approachable individual who
+                            builds positive relationships with colleagues across all levels
+                            of the organization. He’s an excellent team player and has
+                            contributed to fostering a supportive and collaborative work
+                            environment. His friendly and respectful demeanor made him
+                            well-liked and trusted among his peers.
+                            <br /><br />
+                            It has been a pleasure having him on the team, and while we are
+                            sad to see him go, I am confident that he will excel in his
+                            future endeavors. I wholeheartedly recommend him for any role he
+                            chooses to pursue and am certain he will bring immense value to
+                            his next organization.”
                         </p>
-                        <a href="https://www.linkedin.com/in/h%C3%A5kan-molin-021a87b/" target="new" class="mt-6 text-right font-extrabold text-blue-600 block"> Håkan Molin </a>
-                        <p class="text-right font-semibold text-blue-600"> Head of IT End User & Engineering Services<br/> Zeekr Technology Europe</p>
+                        <a href="https://www.linkedin.com/in/h%C3%A5kan-molin-021a87b/" target="new"
+                            class="mt-6 text-right font-extrabold text-blue-600 block">
+                            Håkan Molin
+                        </a>
+                        <p class="text-right font-semibold text-blue-600">
+                            Head of IT End User & Engineering Services<br />
+                            Zeekr Technology Europe
+                        </p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="min-w-full p-16">
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg italic">
+                            “I had the opportunity to work closely with Solomon at Zeekr
+                            Tech EU, developing and maintaining our Fleet Management system
+                            in Odoo.
+                            <br /><br />
+                            I was amazed how quickly Solomon understood the business need
+                            and had the ability to translate these to valuable system
+                            functions.
+                            <br /><br />
+                            During his assignment with us, we went through an organizational
+                            change, and it was decided to migrate the Odoo-system to R&D's
+                            business system instead. Solomon approached this task with
+                            curiosity and decided to learn to develop M365-solution in order
+                            to support the company in the transition.
+                            <br /><br />
+                            Solomon is a dedicated and loyal co-worker that approaches each
+                            task with sincerity and determination. He is helpful and a
+                            strong team player. His attitude contributes to a positive
+                            atmosphere within the team. I gladly recommend Solomon and wish
+                            him all the best in his future endeavors.”
+                        </p>
+                        <a href="https://www.linkedin.com/in/alexander-wingfors-b8361641/" target="new"
+                            class="mt-6 text-right font-extrabold text-blue-600 block">
+                            Alexander Wingfors
+                        </a>
+                        <p class="text-right font-semibold text-blue-600">
+                            Senior Specialist <br />
+                            Zeekr Technology Europe
+                        </p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="min-w-full p-16">
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg italic">
+                            “I had the pleasure of working with Solomon Prabu for 1,5 years at Zeekr /Odoo project, where we collaborated on LDB development and set up a Teamcenter interface.
+                            <br /><br />
+                            Solomon consistently impressed me with his strategic thinking, creativity, and end-to-end responsibility.
+                            <br /><br />
+                            Beyond his technical skills, Solomon is a joy to work with. He is friendly, easy to communicate with, and a team player.
+                            <br /><br />
+                            I wholeheartedly recommend Solomon to anyone looking for a developer role especially in Python and Odoo skillset I'm confident he'll be a valuable asset to any team.”
+                        </p>
+                        <a href="https://www.linkedin.com/in/nevzat-keles-55a19849/" target="new"
+                            class="mt-6 text-right font-extrabold text-blue-600 block">
+                            Nevzat Keles
+                        </a>
+                        <p class="text-right font-semibold text-blue-600">
+                            Senior System Engineer <br />
+                            Zeekr Technology Europe
+                        </p>
                     </div>
                 </div>
 
                 <!-- Controls -->
-                <button id="prev" 
-                    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white-400 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
+                <button id="prev"
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 dark:bg-slate-700/80 dark:bg-slate-800/80 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
 
-                <button id="next" 
-                    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white-400 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
+                <button id="next"
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 dark:bg-slate-700/80 dark:bg-slate-800/80 hover:bg-blue-600 text-black hover:text-white p-2 rounded-full shadow-md transition-all duration-300 hover:scale-110">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
-
             </div>
         </section>
-
-
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-6 mt-12">
+    <footer class="bg-gray-800 dark:bg-black text-white p-6 mt-12">
         <div class="max-w-7xl mx-auto text-center">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Solomon Prabu D. Built with HTML and Tailwind CSS.</p>
+            <p>
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                Solomon Prabu D. Built with HTML and Tailwind CSS.
+            </p>
         </div>
     </footer>
-<script src="/javascript/lucide.js"></script>
-<script src="/javascript/script.js"></script>
-
+    <script src="javascript/lucide.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
+
 </html>
